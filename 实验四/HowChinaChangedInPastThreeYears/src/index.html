@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <style>
+    .line {
+      fill: none;
+      stroke-width: 2px;
+    }
+
+    .legend {
+      font-size: 14px;
+    }
+  </style>
+</head>
+
+<body>
+  <svg width="600" height="400"></svg>
+
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+  <script>
+    var data = [
+      { year: 2019, unemploymentRate: 3.6, civilServiceExams: 13.793, postgraduateExams: 29 },
+      { year: 2020, unemploymentRate: 4.2, civilServiceExams: 14.37, postgraduateExams: 34.1 },
+      { year: 2021, unemploymentRate: 4, civilServiceExams: 15.76, postgraduateExams: 37.7 },
+      { year: 2022, unemploymentRate: 5.4, civilServiceExams: 21.23, postgraduateExams: 45.7 }
+    ];
+
+    var svg = d3.select("svg"),
+      margin = { top: 40, right: 30, bottom: 60, left: 60 }, // 增加上边距和左边距来容纳标题和图例
+      width = +svg.attr("width") - margin.left - margin.right,
+      height = +svg.attr("height") - margin.top - margin.bottom,
+      g = svg.append("g").attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
+    var x = d3.scaleLinear()
+      .domain([d3.min(data, function (d) { return d.year; }), d3.max(data, function (d) { return d.year; })])
+      .range([0, width]);
+
+    var y1 = d3.scaleLinear()
+      .domain([0, d3.max(data, function (d) { return d.unemploymentRate; })])
+      .range([height, 0]);
+
+    var y2 = d3.scaleLinear()
+      .domain([0, d3.max(data, function (d) { return Math.max(d.civilServiceExams, d.postgraduateExams); })])
+      .range([height, 0]);
+
+    var line1 = d3.line()
+      .x(function (d) { return x(d.year); })
+      .y(function (d) { return y1(d.unemploymentRate); });
+
+    var line2 = d3.line()
+      .x(function (d) { return x(d.year); })
+      .y(function (d) { return y2(d.civilServiceExams); });
+
+    var line3 = d3.line()
+      .x(function (d) { return x(d.year); })
+      .y(function (d) { return y2(d.postgraduateExams); });
+
+    g.append("path")
+      .datum(data)
+      .attr("class", "line")
+      .attr("d", line1)
+      .style("stroke", "steelblue");
+
+    g.append("path")
+      .datum(data)
+      .attr("class", "line")
+      .attr("d", line2)
+      .style("stroke", "green");
+
+    g.append("path")
+      .datum(data)
+      .attr("class", "line")
+      .attr("d", line3)
+      .style("stroke", "red");
+
+    g.append("g")
+      .attr("transform", "translate(0," + height + ")")
+      .call(d3.axisBottom(x).ticks(data.length).tickFormat(d3.format("d")));
+
+    g.append("g")
+      .call(d3.axisLeft(y1))
+      .append("text")
+      .attr("fill", "steelblue")
+      .attr("x", 10)
+      .attr("dy", "0.71em")
+      .attr("text-anchor", "start")
+      .text("失业率");
+
+    g.append("g")
+      .call(d3.axisRight(y2))
+      .attr("transform", "translate(" + width + ",0)")
+      .append("text")
+      .attr("fill", "green")
+      .attr("x", -10)
+      .attr("dy", "0.71em")
+      .attr("text-anchor", "end")
+      .text("公务员考试人数 (万人) & 研究生考试人数 (万人)");
+
+    // 添加图例
+    var legend = g.append("g")
+      .attr("class", "legend")
+      .attr("transform", "translate(0," + (height + 30) + ")");
+
+    legend.append("rect")
+      .attr("x", 0)
+      .attr("width", 20)
+      .attr("height", 20)
+      .style("fill", "steelblue");
+
+    legend.append("text")
+      .attr("x", 30)
+      .attr("y", 10)
+      .attr("dy", "0.35em")
+      .text("失业率");
+
+    legend.append("rect")
+      .attr("x", 160)
+      .attr("width", 20)
+      .attr("height", 20)
+      .style("fill", "green");
+
+    legend.append("text")
+      .attr("x", 190)
+      .attr("y", 10)
+      .attr("dy", "0.35em")
+      .text("公务员考试");
+
+    legend.append("rect")
+      .attr("x", 320)
+      .attr("width", 20)
+      .attr("height", 20)
+      .style("fill", "red");
+
+    legend.append("text")
+      .attr("x", 350)
+      .attr("y", 10)
+      .attr("dy", "0.35em")
+      .text("研究生考试");
+
+    // 添加标题
+    svg.append("text")
+      .attr("x", width / 2 + margin.left)
+      .attr("y", margin.top - 10)
+      .attr("text-anchor", "middle")
+      .style("font-size", "20px")
+      .text("疫情三年对中国的影响");
+  </script>
+</body>
+
+</html>

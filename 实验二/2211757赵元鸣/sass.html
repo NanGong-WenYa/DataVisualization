@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>权游：铭记与死亡战斗的人们</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        #myCanvas {
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div>
+        <canvas id="myCanvas"></canvas>
+        <script>
+            var c = document.getElementById("myCanvas");
+            var ctx = c.getContext("2d");
+
+            // Set canvas size to full width and fixed height
+            c.width = window.innerWidth;
+            c.height = 200;
+            ctx.strokeStyle = "white";
+            ctx.font = "60px serif";
+            // Calculate text width
+            var textWidth = ctx.measureText("权力的游戏：临冬城之战").width;
+            // Calculate X coordinate for centering text
+            var x = (c.width - textWidth) / 2;
+            var y = c.height / 2; // Y coordinate for centering vertically
+
+            ctx.strokeText("权力的游戏：临冬城之战", x, y);
+        </script>
+    </div>
+
+
+
+    <div>
+
+
+        <h2 class="custom-heading">战争简述</h2>
+        <p>"权力的游戏"第八季第三集发生了一场史诗般的战斗，称为"Battle of Winterfell"（临冬城之战）。这场战斗是人类（包括临冬城的居民和来自各个阵营的战士）与"异鬼"（White
+            Walkers）及其军队之间的一场决战。</p>
+
+        <p>在这一集中，终于迎来了长夜的战斗。临冬城作为人类的最后一道防线，集结了许多主要角色和军队，包括琼恩·雪诺（Jone Snow）、丹妮莉丝·坦格利安（Daenerys
+            Targaryen）、丽莎·史塔克（Arya
+            Stark）、提利昂·兰尼斯特（Tyrion Lannister）和其他重要人物。</p>
+
+        <p>白行者及其军队发动了一系列惊人的攻击，临冬城的战士们奋力抵抗。整场战斗激烈而紧张，充满了战斗、牺牲和情感。临冬城内外都进行了激烈的战斗，整个场面极具震撼。
+        </p>
+        <p> 最终，临冬城的防线被突破，然而，最令人惊喜的是，阿莉亚·史塔克（Arya
+            Stark）成功地消灭了白行者的首领，从而打破了白行者对人类的威胁，彻底改变了战局。这是一集充满战斗、紧张和情感的精彩剧集，也是这部史诗剧的高潮之一。<br><br>
+        </p>
+        <img src="image/post.jpg" alt="post" class="posts">
+        <img src="image/post2.jpg" alt="post" class="posts">
+        <img src="image/post3.jpg" alt="post" class="posts">
+        <h5>《权力的游戏》电视剧海报</h5>
+
+    </div>
+
+    <div>
+        <div class=BackgroundChange>
+            <svg width="100%" height="10">
+                <rect width="100%" height="200" fill="rgb(129, 26, 26) " />
+            </svg>
+            <h2>大战即发</h2>
+            <p>夜王的尸鬼大军即将兵临城下。山姆手里握着龙晶匕首，茫然不知所措。熊岛的莱安娜指挥士兵在城门后布防，守紧大门是她的职责。提利昂虽然身穿盔甲，但战前会议上，女王丹妮莉丝已要求他保命为主，所以只得跟着老弱妇孺进入地下墓窖。布兰则在铁民的保护下前往神木林，引诱夜王上钩。
+            </p>
+
+            <p>城墙上，戴佛斯拎上几袋箭囊放在弓箭手脚边。珊莎和艾莉亚站在冷风中，感觉不到刮过面庞的疼痛，紧张的盯着漆黑的远方。两头巨龙从掠过城头，才让珊莎略微心安一些。无垢者快速在城外列阵，他们前面是一排投石车，再前面就是咆哮勇士多斯拉克人。左翼有布蕾妮和詹姆率领的战士，右翼交给了自由民、守夜人。克里冈也混在其中，推开那些新兵蛋子，努力挤向阵前。山姆好一会才找到了自己的位置，惹得艾迪森一阵埋怨。<br>
+            </p>
+            <div class="container">
+                <img src="image/BeforeWar.jpg" alt="post" class="movieStills">
+                <h5>大军将至</h5>
+            </div>
+            <p>巨龙飞落山头，琼恩和丹妮莉丝看着山下严阵以待的临冬城，静候敌人到来。乔拉骑马伫立阵前，似乎听到伸手不见五指的前方有马蹄踏雪的声音。出人意料，来人是红袍女梅丽珊卓。她请乔拉指挥多斯拉克人举起手中的弯刀，随后念动咒语。每把弯刀都腾出火焰，照亮了战场，也燃起一丝希望。等梅丽珊卓的马到了城门前，戴佛斯迟疑了一下才下令打开城门。梅丽珊卓进了城，看到戴佛斯怨恨的双眼，心中毫无波澜。反正黎明之前就会死，这是她的宿命。<br>
+            </p>
+
+            <p>这时，城外喧嚣声起。乔拉已率领咆哮勇士发起冲锋，如同火海般冲向黑夜。无垢者的投石车也开动，一个个火球飞向夜空。山上的琼恩和丹妮莉丝惊愕的看到，刚才还快速向前的火海，像是撞上了岩石。很快火光熄灭，咆哮声平息，数千咆哮勇士被黑暗吞噬。<br>
+            </p>
+            <div class="container">
+                <img src="image/Witch.jpg" alt="post" class="movieStills">
+                <img src="image/Doman.jpg" alt="post" class="movieStills">
+                <h5>梅丽珊卓向神灵祈祷，点燃了众军的火把</h5>
+            </div>
+            <p>乔拉和几名幸存者狼狈逃了回来，这次轮到了尸鬼大军的冲锋。灰虫子和无垢者竖起盾牌，举起长矛，抵挡第一波冲击。布蕾妮和托蒙德各自率兵从左右夹击，詹姆、贝里、克里冈……无人能逃避，唯有拼死一战。<br></p>
+            <p></p>
+            <p>丹妮莉丝骑着卓耿，从空中喷出龙焰，总算减轻了一点压力。琼恩知道尸鬼只是傀儡，夜王和异鬼必在后方。当他骑在雷加背上俯冲过去，空中突然出现风暴。狂风夹杂着冰雹，直逼临冬城。见形势危急，艾莉亚把龙晶匕首塞进珊莎手里，让她速进墓窖避难。呆在地下的提利昂、瓦里斯弥桑黛看到珊莎面色凝重的进来，便知外面情况不妙。<br>
+            </p>
+            <p></p>
+            <p>城前陷入混战，每个人想的不再是为了北境、为了国王，只有为保住自己的性命拼杀。风暴越来越大，琼恩辨不清方向，与丹妮莉丝撞个正着。二人费了好大的劲才稳住巨龙，然而地面上已溃不成军，还活着的人紧急撤回城里，灰虫子率领无垢者殿后。<br>
+            </p>
+            <p></p>
+            <p>等大部分人撤出战场，就要点燃沿城挖掘的壕沟。可琼恩和丹妮莉丝在风暴中看不到戴佛斯挥舞的火把，幸存的无垢者摆出方阵，保护梅丽珊卓走向壕沟。几句咒语召唤出大火，瞬间点燃长长的壕沟，隔开活人与死人。稍得喘息的克里冈看着火焰另一侧站立不动的尸鬼，心有余悸。他也不知道，自己是在害怕火焰，还是那些死人。<br>
+            </p>
+
+            <div class="container">
+                <img src="image/TwoDragons.jpg" alt="post" class="movieStills">
+                <img src="image/NightKing.jpg" alt="post" class="movieStills">
+                <h5>夜王驾驭着异鬼龙与另外二龙博弈</h5>
+            </div>
+            <p>火堆并没有阻挡尸鬼多久，夜王驱使他们纵身跳入火中，开辟出一条条通向城墙的通道。还没来得及休息的士兵又要上到城墙，防御尸鬼攻城。被龙晶箭矢射中的尸鬼却成了后面尸鬼的爬城梯，詹姆、布蕾妮等人举起龙晶兵器，砍杀爬上城头的尸鬼。但放眼望去，城下尸鬼如海浪一般。越来越多的尸鬼翻过城墙，攻入临冬城，外围被攻陷。艾莉亚手持长枪坚守城头，仍是无力回天。城门被死于艰难屯的巨人尸鬼撞开，英勇的莱安娜临死前将龙晶匕首插进了它发出蓝光的眼睛，没有辱没家族的姓氏。<br><a
+                    <p></p>
+            <p>临冬城陷落，攻城战转为了阵地战。勇士们各自为战，在狭小的通道、走廊内歼敌。艾莉亚在书房内躲避蜂拥而入尸鬼，可到处都是敌人，已无安全的地方。为救艾莉亚和克里冈，贝里失去了最后一条命。他已完成了光之王赋予的使命，听到梅丽珊卓的声音，艾莉亚认出了她。当年在兄弟会的预言一一灵验，在这世界末日，光之王再次安排二人相见。梅丽珊卓带来了光之王的话，死亡不在今日，艾莉亚心领神会。<br>
+            </p>
+
+            <p>城堡内的尸鬼逐渐被肃清，前方战事告一段落，后方才刚刚开始。部分尸鬼穿过城堡，冲向神木林，那才是它们的目标。半空中，雷加和韦赛里斯缠斗在了一起，相互撕咬。丹妮莉丝骑着卓耿从旁突袭，夜王一个不稳坠落地面。雷加也受伤不支，落到地上。<br>
+            </p>
+
+            <p>丹妮莉丝居高临下，命卓耿喷出龙焰，哪知并无作用。夜王站立火中，再次举起手中的冰矛。丹妮莉丝知道厉害，只得调头飞走。琼恩抽出长牙，追向夜王。但见夜王双眼泛蓝，刚才还并肩作战，战死沙场的战友爬了起来，挡在琼恩面前。临冬城内同样如此，筋疲力尽的人们恐惧的看着战友变成敌人。更可怕的是，连墓窖中先祖的尸骨也爬出坟墓，攻向手无寸铁的妇孺。<br>
+            </p>
+
+            <p>丹妮莉丝落下地面，用龙焰为琼恩开出了路。可成群的尸鬼爬上龙身，卓耿抖动身体甩掉尸鬼飞上天，不想丹妮莉丝也掉了下来。乔拉冲过来，拼死护住丹妮莉丝。琼恩穿过临冬城奔向神木林，顾不上帮其他正在与尸鬼拼杀的人，却被韦赛里斯所阻。<br>
+            </p>
+
+            <p>鱼梁木下，席恩射尽了最后一支箭，与铁民一起举剑肉搏，战至最后一人。异鬼跟在夜王身后走向布兰，席恩徒劳的冲向夜王，洗刷了当年的罪孽。夜王走到布兰面前，手伸向背后的冰剑。这时，艾莉亚呐喊着从背后扑来。夜王转过身，一手掐住艾莉亚的脖子，另一只手抓住艾莉亚握着瓦雷利亚钢匕首的左手。艾莉亚正等着这个时候，她左手一松，右手从身下接住落下的匕首，狠狠捅进夜王的身体。夜王应声化为冰碴，所有的异鬼、尸鬼随之倒地，成为真正的亡灵。<br>
+            </p>
+            <div class="container">
+                <img src="image/Theon.jpg" alt="post" class="movieStills">
+                <h5>席恩看向夜王，义无反顾的冲去</h5>
+            </div>
+            <p>活人胜利了，代价是惨痛的。丹妮莉丝抱着乔拉渐渐冰冷的尸体失声痛哭。梅丽珊卓脱下红宝石项链，在黎明到来前迅速老去，化为枯骨。她已完成了使命，无需再留恋不老的肉体。</p>
+            <svg width="100%" height="10">
+                <rect width="100%" height="200" fill="rgb(129, 26, 26) " />
+            </svg>
+        </div>
+
+    </div>
+    <div>
+        <h2>人物缅怀</h2>
+        <table>
+
+            <tr>
+                <td><a href="#JoneSnow" class="no-underline">Jone Snow</a></td>
+                <td><a href="#DaenerysTargaryen" class="no-underline">Daenerys Targaryen</a></td>
+                <td><a href="#TyrionLannister" class="no-underline">Tyrion Lannister</a></td>
+                <td><a href="#AryaStark" class="no-underline">Arya Stark</a></td>
+                <td><a href="#BranStark" class="no-underline">Bran Stark</a></td>
+                <td><a href="#SamwellTarly " class="no-underline ">Samwell Tarly</a></td>
+            </tr>
+
+            <tr>
+                <td><a href="#SandorClegane" class="no-underline">Sandor Clegane</a></td>
+                <td><a href="#BrienneofTarth" class="no-underline">Brienne of Tarth</a></td>
+                <td><a href="#Melisandre" class="no-underline">Melisandre</a></td>
+                <td><a href="#JorahMormont" class="no-underline">Jorah Mormont</a></td>
+                <td><a href="#TheonGreyjoy" class="no-underline">Theon Greyjoy</a></td>
+                <td><a href="#LyannaMormont" class="no-underline">Lyanna Mormont</a></td>
+
+            </tr>
+
+        </table>
+        <div class="container">
+            <div>
+                <h2><a name="JoneSnow"></a>Jone Snow</h2><br>
+                <img src="image/JoneSnow.jpg" alt="JoneSnow" class="portrait">
+                <p>被称为“长城上的私生子”，琼恩和他同父异母的兄弟姐妹，即艾德·史塔克嫡生的孩子，
+                    一起在父亲的抚养下长大（琼恩成长得更快些）。因此，他有着史塔克家族和北方人的荣誉感，
+                    这也使他在面临在道德上复杂模糊的问题时作出与之相符的决定。。他一直对于自己私生子的身份耿耿于怀，时常感到自己像个局外人，最终决定加入出身并不重要的守夜人军团。[3]
+                    而这，也同时意味着他必须要忘记自己的过去。
+                    纠结于此良久后，他逐渐明白身着黑衣的责任，选择遵守自己立下的誓言，完全忠于守夜人。
+                    琼恩被认为马术高超且很有剑术天赋。从刚会走路起他就开始接受剑术训练。
+                    琼恩比他的哥哥罗柏剑术更好。 他一直信仰旧神。<br>
+                <p>此战中，他是北境之王，是第998任守夜人总司令，与当临冬城遭受白行者大军的围攻时，
+                    琼恩·雪诺（Jon Snow）在前线坚定领导，鼓舞军队奋勇抵抗，成为士兵们的坚强榜样。</p>
+                </p>
+                <h3>名言</h3>
+                <p>“ 看得出来。跟你那些兄弟相比，你还比较有北方人的味道。 ”
+                    —— 提利昂·兰尼斯特对琼恩说。</p><br><br>
+            </div>
+        </div>
+
+        <div class="container">
+            <div>
+                <h2><a name="DaenerysTargaryen"></a>Daenerys Targaryen</h2>
+                <img src="image/DaenerysTargaryen.jpg" alt="DaenerysTargaryen" class="portrait">
+                <p>丹妮莉丝·坦格利安（Daenerys Targaryen），又称丹妮或者“风暴降生”丹妮莉丝。丹妮莉丝身材娇小且美貌绝伦。她有着银金色的头发和紫色的眼睛。
+                    <br>她是“疯王”伊里斯·坦格利安二世之女，
+                    雷加·坦格利安王子的妹妹，也是古老的坦格利安王朝最后的传人。她在童年时与哥哥韦赛里斯·坦格利安一直被作为他人的政治筹码。韦赛里斯为了获取多斯拉克人的大军，将丹妮嫁给卓戈卡奥
+                    。自此丹妮莉丝逐渐成长为一个令人敬畏的女王和解放者。因为她从龙蛋中孵化出了三只幼龙，又被成为“龙之母”。
+                    在此站中作为多斯拉克人的首领带领其奋勇拼杀，名义上维斯特洛大陆的正统君主，驾驭火龙吗，对异鬼造成大量伤亡，对战争的胜利功不可没。
+                </p>
+                <h3>名言</h3>
+                <p>“ 那个当年寄于我篱下的惊恐女孩已在多斯拉克海上死去，又在血与火中重生。新生的龙女王是个真正的坦格利安。 ”
+                    —— 伊利里欧·摩帕提斯</p>
+            </div>
+        </div>
+
+        <div class="container">
+            <div>
+                <h2><a name="TyrionLannister"></a>Tyrion Lannister</h2>
+                <img src="image/TyrionLannister.jpg" alt="TyrionLannister" class="portrait">
+                <p>提利昂·兰尼斯特（TyrionLannister）是泰温公爵和乔安娜夫人的第三个也是最小的孩子。
+                    因为是个侏儒，他有时候被戏称为小恶魔和半人。他利用自己的智慧屡次化险为夷，帮助兰尼斯特家族赢得了
+                    五王之战，但命运的不公使得他成为了一个弑亲者和通缉犯，踏上了流亡之路。<br>
+                <p>虽然出身高贵并且富有权势，畸形的身材仍然给他带来了许多问题和困扰。提利昂对敌人凶残，但是对和自己有着类似境遇而遭受歧视的人时常怀有同情之心。
+                    他说话尖酸刻薄，一针见血，不留情面，往往因此而得罪别人，有时也会为自己招来祸患。</p>
+                <p>在此战中参与了战局的布置，虽然并无上前线厮杀（确实不是其所长），但仍为此战作出不可磨灭的贡献，也是本人最喜爱的人物之一</p>
+                </p>
+
+                <h3>名言</h3>
+                <p>“ “力量就像墙上的影子，但影子却能杀人。而且，即便是矮小的人物，也能投射出硕大的影子。” – 瓦里斯对提利昂的评价 ”</p>
+            </div>
+        </div>
+
+        <div class="container">
+            <div>
+                <h2><a name="AryaStark"></a>Arya Stark</h2>
+                <img src="image/AryaStark.jpg" alt="AryaStark" class="portrait">
+                <p>艾莉亚·史塔克（Arya Stark）是艾德公爵和凯特琳夫人的第三个孩子，也是他们的次女。
+                    但她并不像其他的千金小姐，她酷爱剑法，并不想和姐姐一样做个淑女<br><br>
+                <p>艾莉亚在家族遭遇劫难后逃出君临，并辗转于河间地各处，最终前往布拉佛斯加入了黑白之院并被
+                    训练为一位刺客。</p>
+                <p>在此战中先是在阁楼里同猎狗Sandor Clegane与兄弟会的贝里一起躲避大群异鬼的袭击，并且刺出了此战最关键的一剑，
+                    杀死了夜王，野鬼军团瞬间崩塌，三眼乌鸦布兰得救，百万生灵得救。</p>
+                </p>
+                <h3>名言</h3>
+                <p>“ 詹德利： 你算哪门子的老爷千金?
+                    艾莉亚： 就是这种。”
+                    —— 艾莉亚对詹德利说</p>
+            </div>
+        </div>
+
+        <div class="container">
+            <div>
+                <h2><a name="BranStark"></a>Bran Stark</h2>
+                <img src="image/BranStark.jpg" alt="BranStark" class="portrait">
+                <p>布兰登·史塔克（BranStark），通常被称为布兰，他是艾德和凯特琳的次子。严重的摔伤导致了他终生残疾，这极大地改变了他的生活。
+                    他需要仆人阿多的背负才能完成日常的活动。布兰有一只名叫夏天的冰原狼，并且他具有狼灵的能力，可以与狼精神相通。
+                    他还是一位绿先知，有时会做预言的梦。</p>
+                <p>在三眼乌鸦的传授下，布兰继承了其能力，称为了预言家，但也是因此被夜王追杀，带来了异鬼大军。在战争的结尾与夜王的对峙中
+                    被姐姐Arya救下。</p>
+                <h3>名言</h3>
+                <p>“ 布兰： 人在恐惧的时候还能勇敢吗？
+
+                    奈德：人唯有恐惧的时候方能勇敢。
+                    ”
+                    —— 布兰在看到第一次处决后</p>
+            </div>
+        </div>
+
+        <div class="container">
+            <div>
+                <h2><a name="SamwellTarly"></a>Samwell Tarly</h2>
+                <img src="image/SamwellTarly.jpg" alt="SamwellTarly" class="portrait">
+                <p>山姆威尔·塔利（Samwell Tarly）是蓝道·塔利伯爵的长子。
+                    尽管他肥胖又胆小，极度缺乏自信，却也非常聪明，爱读书，善于思考。他是守夜人中的事务官。<br><br>
+                    他长得非常肥胖，一头深色的头发，巨大的圆脸上有一双灰色的眼睛。
+                    通过不懈地查阅古籍找到了杀灭异鬼的方法————龙晶，为此战提供了胜利的可能。尽管不善战斗，仍然没有躲在避难所
+                    而是选择和自己的兄弟——琼恩·斯诺并肩作战，令人钦佩。</p>
+            </div>
+            <h3>名言</h3>
+            <p>“ 这个世界有太多逞英雄的胆小鬼，能像山姆威尔·塔利这样自承怯懦还真需要点古怪的勇气。”
+                —— 琼恩·雪诺见到山姆后想</p>
+        </div>
+    </div>
+
+    <div class="container">
+        <div>
+            <h2><a name="SandorClegane"></a>Sandor Clegane</h2>
+            <img src="image/SandorClegane.jpg" alt="SandorClegane" class="portrait">
+            <p>桑铎来自有产骑士家族克里冈家族，幼年时，因为玩了哥哥格雷果·克里冈的玩具，被哥哥摁在火盆里，因此毁容。<br>
+            <p>桑铎身材魁梧，左半边脸被烧毁（电视剧中为右脸），因此相貌恐怖。他嗜血残忍，痛恨骑士精神，但是这些都是桑铎为了保护自己的掩饰，事实上，桑铎有着善良温柔的一面，
+                并且他比某些骑士更加具有骑士精神。他的外号是“猎狗”，一方面因为他家族的徽章是三条黑狗，一方面也来源于他残忍的性格和对主人无条件的服从。
+                <br>
+            </p>
+            <p>在此战中战斗在一线，用几乎半条命保护了最后一击的执行者Arya，功勋卓著。</p>
+            </p>
+            <h3>名言</h3>
+            <p>“猎狗会为人而死，却绝不会骗人，而且，它一定自始至终正眼看人。” - 桑铎与珊莎 ”</p>
+        </div>
+
+        <div>
+            <h2><a name="BrienneofTarth"></a>Brienne of Tarth</h2>
+            <img src="image/BrienneofTarth.jpg" alt="BrienneofTarth" class="portrait">
+            <p>布蕾妮是塞尔温·塔斯伯爵的独生女，作为一名战士效力过蓝礼·拜拉席恩和凯特琳。布蕾妮被认为缺少女性的外貌特征，并且被普遍评价为丑陋。对一位女子来说，布蕾妮身材极其高大，甚至达到了男子的水平。她肩膀极宽。
+                布蕾妮的眼睛又大又蓝，纯真而直率，在战斗中闪耀着自信的光芒。这是詹姆·兰尼斯特爵士认为她身上唯一有魅力的地方。
+                <br>在最后一战之前，被Jamie授予了自己追求一生的骑士称号，并拼死对抗异鬼，守护自己的诺言。
+            </p>
+            <h3>名言</h3>
+            <p style=" text-align: center">“ 信任跟金币一样，要靠行动来挣取。”</p>
+        </div>
+    </div>
+
+    <div class="container">
+        <div>
+            <h2><a name="Melisandre"></a>Melisandre</h2>
+            <img src="image/Melisandre.jpg" alt="Melisandre" class="portrait">
+            <p>梅丽珊卓（Melisandre），是拉赫洛的女祭司，是史坦尼斯·拜拉席恩帐下最具影响力的参谋，
+                她不断向史坦尼斯灌输他就是亚梭尔·亚亥的转世的思想。<br><br>
+            <p>是一位美女，有着心型的脸蛋和红色的眼眸，一头铜红色的头发，身躯之内散发着一股热量。
+                梅丽珊卓不需要像凡人一样进食，仅靠光之王就能满足所需能量。
+                她自称经过了“难以计数”的岁月来提升自己的能力，因此她很有可能比看起来更加年长。
+                之前在长城之上向火神祈祷，复活了本战关键人物：琼恩·斯诺，在whitewalker
+                攻城时又一次用魔法点燃鹿柴，建立了火焰屏障，为主军提供强大保护。<br><br></p>
+            </p>
+            <h3>名言</h3>
+            <p>“ 我们都必须做出选择，男与女，老与少，高贵抑或平庸，我们的选择都是相同。我们选择的是光明与黑暗，
+                正义与邪恶。我们选择的是真神或伪神。 ”</p>
+        </div>
+    </div>
+
+    <div class="container">
+        <div>
+            <h2><a name="JorahMormont"></a>Jorah Mormont</h2>
+            <img src="image/JorahMormont.jpg" alt="JorahMormont" class="portrait">
+            <p>乔拉·莫尔蒙 （Jorah
+                Mormont）爵士，人称“大熊”，他是一位被流放的骑士，曾经是熊岛的伯爵和莫尔蒙家族的族长，也是“熊老”杰奥·莫尔蒙的儿子。他为了逃避贩卖奴隶而应受的惩罚离开维斯特洛来到狭海对岸的厄斯索斯当雇佣兵，
+                最终开始为坦格利安效力，并逐渐成为丹妮莉丝·坦格利安最重要和信赖的部属之一。对这位女王也有着莫名的情愫。
+                <br>
+            <p>在此战中在异鬼的重重包围之下保护龙妈，牺牲了自己。死在心爱的女人怀中，爵士乔拉死得其所。</p>
+            </p>
+            <h3>名言</h3>
+            <p style=" text-align: center">“ 你是女王铁卫的首席骑士，我忠实的朋友和优秀的顾问。”
+                —— 丹妮莉丝</p>
+        </div>
+    </div>
+
+    <div class="container">
+        <div>
+            <h2><a name="TheonGreyjoy"></a>Theon Greyjoy</h2>
+            <img src="image/TheonGreyjoy.jpg" alt="TheonGreyjoy" class="portrait">
+            <p>席恩·葛雷乔伊（Theon Greyjoy）是巴隆·葛雷乔伊大王（后自封为国王）的儿子和继承人。
+                在葛雷乔伊叛乱结束后，席恩被艾德·史塔克带走作为人质和养子。在五王之战中，他背叛了史塔克家族，为葛雷乔伊家族效命，并成为"海婊子号"船长。[2]
+                铁民失败后，他被拉姆斯·波顿俘虏并改造为了“臭佬”。
+                在最后一战里，将自己置于布兰和夜王之间，用自己的生命为自己的罪过赎罪，义无反顾地扑向了鬼王，为Arya的
+                击杀拖延了时间。</p>
+            <h3>名言</h3>
+            <p> “我不是席恩，才不是，那个变色龙早就死在临冬城了。我叫臭佬，臭佬臭佬，押韵怪佬。 ”</p>
+        </div>
+    </div>
+
+    <div class="container">
+        <div>
+            <h2><a name="LyannaMormont"></a>Lyanna Mormont</h2>
+            <img src="image/LyannaMormont.jpg" alt="LyannaMormont" class="portrait">
+            <p>这位看起来娇小的女孩是熊岛的统治者和莫尔蒙家族的族长。其柔弱的外表下是一颗坚强勇敢的心。
+                强硬的手腕让人感叹其真为巾帼英雄！莱安娜忠于斯塔克，忠于北境。当史坦尼斯·拜拉席恩写信给北境诸侯们，希望他们臣服于自己时，
+                是莱安娜给了他回复。她拒绝了他的请求，并表示莫尔蒙家族只会臣服于史塔克家族。<br>
+            <p>而在临冬城一战，其并没有和其他公主小姐一起躲在地窖里，而是举起沉重的剑，保卫自己的人民。
+                最后被巨型异鬼屠杀身亡，死前仍在战斗，将刀捅在了异鬼的脑中。真乃壮士西去耳！</p>
+            </p>
+            <h3>名言</h3>
+            <p style=" text-align: center">“ 熊岛除了北境之王，再不认识什么别的国王，我们的国王姓史塔克。 ”</p>
+        </div>
+    </div>
+    </div>
+    <svg width="100%" height="10">
+        <rect width="100%" height="200" fill="rgb(129, 26, 26) " />
+    </svg>
+    <div class="end">
+        注：本网站部分内容为网络资源，如有侵权请发邮件致2938731397@qq.com，必删<br>
+        还有，如果你想更多地了解权游，请浏览
+        <a class="enda"
+            href="https://asoiaf.huijiwiki.com/wiki/%E5%86%B0%E4%B8%8E%E7%81%AB%E4%B9%8B%E6%AD%8C%E4%B8%AD%E6%96%87%E7%BB%B4%E5%9F%BA">
+            冰火维基中文版网站</a>
+
+    </div>
+</body>
+
+
+</html>

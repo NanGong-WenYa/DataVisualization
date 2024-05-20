@@ -1,0 +1,162 @@
+body {
+    background-color: #f0f0f0;
+    /* 设置背景颜色为灰色 */
+}
+
+body {
+    background-color: #f0f0f0;
+    /* 设置背景颜色 */
+    background-image: url(image/fire.jpg);
+    /* 设置背景图片 */
+    background-repeat: no-repeat;
+    /* 防止背景图片重复显示 */
+    background-size: cover;
+    /* 使背景图片填充整个页面 */
+    background-attachment: fixed;
+    /* 背景图片固定不移动 */
+    background-position: center center;
+    /* 将背景图片置中 */
+
+
+}
+
+.custom-heading {
+    margin-top: 150px;
+    /* 向下移动 20 像素 */
+}
+
+/* Remove underline from all links */
+a {
+
+    color: rgb(156, 151, 151);
+}
+
+/* Add underline to links with a specific class (in this case, no-underline) */
+a.no-underline {
+    text-decoration: none;
+}
+
+a.enda {
+    color: rgb(12, 11, 11);
+}
+
+table {
+    margin: 20px;
+    /* 外边距 */
+    padding: 10px;
+    /* 内边距 */
+}
+
+table {
+    border-spacing: 10px;
+    /* 单元格间距 */
+}
+
+td,
+th {
+    border: 1px solid black;
+    padding: 10px;
+}
+
+p {
+    text-indent: 50px;
+    text-align: justify;
+    font-family: "Times New Roman", Times, serif;
+    padding-left: 80px;
+    padding-right: 80px;
+
+    color: rgb(249, 254, 249);
+}
+
+h1,
+h2 {
+    text-align: center;
+    color: rgb(249, 254, 249);
+    font-family: "Times New Roman", Times, serif;
+}
+
+h3 {
+    text-align: center;
+    color: rgb(245, 252, 249);
+    font-family: "Times New Roman", Times, serif;
+}
+
+h5 {
+    text-align: center;
+    color: rgb(245, 252, 249);
+    font-family: "Times New Roman", Times, serif;
+    font-style: italic;
+}
+
+.container {
+    width: 100%;
+    /* 或适当的宽度 */
+    text-align: center;
+    /* 水平居中 */
+}
+
+.portrait {
+    display: inline-block;
+    /* 使宽度生效 */
+    width: 250px;
+    height: auto;
+    border: 2px solid #ccc;
+    margin: 0 auto;
+    /* 居中 */
+}
+
+.posts {
+    display: inline-block;
+    /* 使宽度生效 */
+    width: 250px;
+    height: auto;
+    border: 2px solid #ccc;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-right: 70px;
+    margin-left: 70px;
+    /* 居中 */
+}
+
+.movieStills {
+    display: inline-block;
+    /* 使宽度生效 */
+    width: 400px;
+    height: auto;
+    border: 2px solid #ccc;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-right: 50px;
+    margin-left: 50px;
+    /* 居中 */
+}
+
+.end {
+    width: 100%;
+    /* 或适当的宽度 */
+    text-align: center;
+    /* 水平居中 */
+    color: rgb(163, 156, 156);
+}
+
+.BackgroundChange {
+    background-image: url('image/divBackground.jpg');
+
+    background-position: center center;
+
+}
+
+.BackgroundChange2 {
+    background-image: url('image/divBackground2.jpg');
+    background-size: cover;
+    background-position: center center;
+    margin-left: 50px;
+    margin-right: 100px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.border-container {
+    width: 300px;
+    height: 400px;
+}
