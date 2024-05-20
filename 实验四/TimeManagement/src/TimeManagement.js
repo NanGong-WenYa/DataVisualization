@@ -42,7 +42,7 @@ function TimeManagement(data, {
     .curve(d3.curveCardinal);
 
   // Create the SVG container.
-  const svg = d3.select("#svg1")
+  const svg = d3.select("svg")
     .attr("width", width)
     .attr("height", height)
     .attr("viewBox", [0, 0, width, height])
